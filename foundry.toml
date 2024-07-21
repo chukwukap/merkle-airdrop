@@ -2,5 +2,10 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+remappings = [
+    "@openzeppelin/contracts/token/ERC20/presets/*": "lib/openzeppelin-contracts/contracts/token/ERC20/presets/",
+    "@openzeppelin/contracts/token/ERC20/*": "lib/openzeppelin-contracts/contracts/token/ERC20/",
+    "@openzeppelin/contracts/*": "lib/openzeppelin-contracts/contracts/"
+]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
